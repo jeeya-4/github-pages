@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Apple Hospital</title>
+  <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+</head>
+<body class="bg-gray-50 text-gray-800">
+  <!-- Header -->
+  <header class="bg-white shadow">
+    <div class="container mx-auto px-4 py-4 flex justify-between items-center">
+      <h1 class="text-2xl font-bold text-red-600">Apple Hospital</h1>
+      <nav class="space-x-4">
+        <a href="#about" class="text-gray-700 hover:text-red-600">About</a>
+        <a href="#services" class="text-gray-700 hover:text-red-600">Services</a>
+        <a href="#doctors" class="text-gray-700 hover:text-red-600">Doctors</a>
+        <a href="#appointment" class="text-gray-700 hover:text-red-600">Appointment</a>
+        <a href="#contact" class="text-gray-700 hover:text-red-600">Contact</a>
+      </nav>
+    </div>
+  </header>
+
+  <!-- Hero Section -->
+  <section class="bg-red-100 py-20 text-center">
+    <h2 class="text-4xl font-bold text-red-700 mb-4">Compassionate Care, Advanced Technology</h2>
+    <p class="text-lg text-gray-700">Providing exceptional healthcare services with a personal touch.</p>
+  </section>
+
+  <!-- About Section -->
+  <section id="about" class="container mx-auto py-16 px-4">
+    <h3 class="text-3xl font-semibold mb-6 text-red-600">About Us</h3>
+    <p class="text-gray-700 leading-relaxed">
+      Apple Hospital is a state-of-the-art healthcare institution committed to delivering top-notch medical services. With experienced doctors, modern equipment, and patient-centric care, we are dedicated to improving lives and ensuring well-being.
+    </p>
+  </section>
+
+  <!-- Services Section -->
+  <section id="services" class="bg-gray-100 py-16 px-4">
+    <div class="container mx-auto">
+      <h3 class="text-3xl font-semibold mb-8 text-red-600 text-center">Our Services</h3>
+      <div class="grid md:grid-cols-3 gap-8">
+        <div class="bg-white p-6 rounded shadow">
+          <h4 class="text-xl font-bold mb-2">Emergency Care</h4>
+          <p>24/7 emergency services with experienced staff and immediate response.</p>
+        </div>
+        <div class="bg-white p-6 rounded shadow">
+          <h4 class="text-xl font-bold mb-2">General Medicine</h4>
+          <p>Comprehensive medical services for all age groups with expert consultation.</p>
+        </div>
+        <div class="bg-white p-6 rounded shadow">
+          <h4 class="text-xl font-bold mb-2">Surgery</h4>
+          <p>Advanced surgical facilities with precision and care for all major specialties.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Doctors Section -->
+  <section id="doctors" class="container mx-auto py-16 px-4">
+    <h3 class="text-3xl font-semibold mb-8 text-red-600 text-center">Meet Our Doctors</h3>
+    <div class="grid md:grid-cols-3 gap-8">
+      <div class="bg-white p-6 rounded shadow text-center">
+        <h4 class="text-xl font-bold">Dr. Neha Sharma</h4>
+        <p class="text-gray-600">Cardiologist</p>
+      </div>
+      <div class="bg-white p-6 rounded shadow text-center">
+        <h4 class="text-xl font-bold">Dr. Rajiv Mehta</h4>
+        <p class="text-gray-600">Orthopedic Surgeon</p>
+      </div>
+      <div class="bg-white p-6 rounded shadow text-center">
+        <h4 class="text-xl font-bold">Dr. Anjali Verma</h4>
+        <p class="text-gray-600">Pediatrician</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- Appointment Section -->
+  <section id="appointment" class="bg-white py-16 px-4">
+    <div class="container mx-auto">
+      <h3 class="text-3xl font-semibold mb-6 text-red-600 text-center">Book an Appointment</h3>
+      <div class="max-w-xl mx-auto">
+        <form class="space-y-4">
+          <input type="text" placeholder="Full Name" class="w-full p-3 border rounded">
+          <input type="email" placeholder="Email Address" class="w-full p-3 border rounded">
+          <input type="tel" placeholder="Phone Number" class="w-full p-3 border rounded">
+          <input type="date" class="w-full p-3 border rounded">
+          <select class="w-full p-3 border rounded">
+            <option>Select Department</option>
+            <option>Cardiology</option>
+            <option>Orthopedics</option>
+            <option>Pediatrics</option>
+          </select>
+          <button type="submit" class="bg-red-600 text-white px-6 py-2 rounded hover:bg-red-700">Submit</button>
+        </form>
+      </div>
+    </div>
+  </section>
+
+  <!-- Contact Section -->
+  <section id="contact" class="bg-red-50 py-16 px-4">
+    <div class="container mx-auto">
+      <h3 class="text-3xl font-semibold mb-6 text-red-600 text-center">Contact Us</h3>
+      <div class="max-w-xl mx-auto mb-8">
+        <form class="space-y-4">
+          <input type="text" placeholder="Your Name" class="w-full p-3 border rounded">
+          <input type="email" placeholder="Your Email" class="w-full p-3 border rounded">
+          <textarea placeholder="Your Message" class="w-full p-3 border rounded h-32"></textarea>
+          <button type="submit" class="bg-red-600 text-white px-6 py-2 rounded hover:bg-red-700">Send Message</button>
+        </form>
+      </div>
+      <!-- Embedded Google Map -->
+      <div class="w-full max-w-2xl mx-auto">
+        <iframe class="w-full h-64 rounded shadow" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3153.019487546837!2d-122.42197728468233!3d37.77492977975952!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8085808c00000001%3A0xf3e3a1e3e8d7df84!2sApple%20Hospital!5e0!3m2!1sen!2sus!4v1614012345678" allowfullscreen="" loading="lazy"></iframe>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="bg-white py-6 text-center text-gray-600 text-sm">
+    &copy; 2025 Apple Hospital. All rights reserved.
+  </footer>
+</body>
+</html>
